@@ -1,0 +1,125 @@
+/* read more button */
+/*  */
+.read-more {
+  display: inline-block;
+  position: relative;
+  padding: 0.67em;
+  width: 48px;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+  color: #f2f2f2;
+  background: transparent;
+  transition: width 0.4s, height 0.4s;
+  font-family: "raleway", sans-serif;
+}
+
+.read-more span {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.read-more .hover-img {
+  opacity: 0;
+}
+.read-more:hover .hover-img {
+  right: 15px;
+  opacity: 1;
+  transition: 0.6s;
+  transition-delay: 0.6s;
+}
+.read-more:before,
+.read-more:after {
+  content: "";
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  top: 0.63em;
+  left: -16px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.4s, opacity 0.6s;
+  -moz-transition: 0.4s, opacity 0.6s;
+  -o-transition: 0.4s, opacity 0.6s;
+  transition: 0.4s, opacity 0.6s, width 0.6s;
+}
+
+/* :before */
+.read-more:before {
+  content: attr(data-hover);
+  -webkit-transform: translate(-150%, 0);
+  font-family: "Poppins", sans-serif;
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+}
+
+/* :after */
+.read-more:after {
+  content: attr(data-active);
+  -webkit-transform: translate(150%, 0);
+  -moz-transform: translate(150%, 0);
+  -ms-transform: translate(150%, 0);
+  -o-transform: translate(150%, 0);
+  transform: translate(150%, 0);
+}
+
+.read-more:hover {
+  width: 150px;
+  -webkit-transition: 0.4s, width 0.6s;
+  -moz-transition: 0.4s, width 0.6s;
+  -o-transition: 0.4s, width 0.6s;
+  transition: width 0.4s, height 0.4s;
+}
+
+.read-more:hover span,
+.read-more:active span {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+  transition: 0.4s, opacity 0.6s, width 0.6s;
+}
+
+/*  
+      We show :before pseudo-element on :hover 
+      and :after pseudo-element on :active 
+  */
+.read-more:hover:before,
+.read-more:active:after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* 
+    We hide :before pseudo-element on :active
+  */
+
+.read-more:active:before {
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}

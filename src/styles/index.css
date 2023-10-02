@@ -1,0 +1,146 @@
+@import url("./homepage.css");
+@import url("./layout.css");
+@import url("./aboutUs.css");
+@import url("./ourSolutions.css");
+@import url("./ourServices.css");
+@import url("./buttonAnimation.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+/* common classes */
+/* gradient color  */
+.text-gradient-gold {
+  background: linear-gradient(92.74deg, #fbff36 19.72%, #ff7514 84.98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-white-gold:hover {
+  background: linear-gradient(92.74deg, #fbff36 19.72%, #ff7514 84.98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-white-gold {
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* background color */
+.bg-gradient-gold2 {
+  background: linear-gradient(92.74deg, #fbff36 19.72%, #ff7514 84.98%);
+}
+/* button color */
+.button-white {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.button-white:hover {
+  background: linear-gradient(92.74deg, #fbff36 19.72%, #ff7514 84.98%);
+  border: 1px solid transparent;
+}
+/*  */
+textarea {
+  resize: none;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.gradient-box-color {
+  background-image: linear-gradient(to right, #9400d3, #4b0082);
+}
+
+.text-strokes {
+  -webkit-text-stroke: 5px #ffffff;
+  -webkit-text-fill-color: #111;
+}
+
+.sticky {
+  position: sticky;
+  top: 20px;
+  left: 0;
+}
+
+/* scale for boxes */
+.scale-box-container .img-box:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out 0s;
+}
+.scale-box-container .img-box img {
+  transition: all 0.4s ease-in-out 0s;
+}
+.scale-box-container .img-box {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* for hide form number arrow */
+input[type="number"],
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
+/*  */
+.ant-modal-content {
+  padding: 0px !important;
+}
+
+.ant-spin .ant-spin-dot-item {
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: #fdb84a !important;
+}
+
+/*  */
+
+.ant-select-selector {
+  background: #1f1f1f !important;
+  border-bottom: 1px solid #757575 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
+  border-right: none !important;
+  color: white !important;
+  font-size: 17px !important;
+  padding-left: 1px !important;
+  height: 42px !important;
+}
+.ant-select-selector:focus {
+  border: none !important;
+}
+
+span.ant-select-selection-search {
+  margin: 0px 0px 0px -9px !important;
+  color: white !important;
+}
+span.ant-select-selection-placeholder {
+  color: #757575 !important;
+}
+.ant-select-focused:focus {
+  border: none !important;
+}
+.autocomplete-modal {
+  background-color: #1f1f1f !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+}
+.autocomplete-modal .ant-select-item-option-content {
+  color: white !important;
+}
+.chatwith.rightpos .chatwith-mainbutton-wrapper {
+  margin: 20px !important;
+}

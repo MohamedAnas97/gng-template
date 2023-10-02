@@ -1,0 +1,24 @@
+.header-container .button-gradient {
+  background: linear-gradient(270deg, #fc6767 0%, #ec008c 100%);
+  border-radius: 6px;
+}
+
+.header-container .button-gradient:hover {
+  background: linear-gradient(270deg, #fb6363 0%, #e20088 100%);
+  border-radius: 6px;
+}
+
+.header-container .desktop-links ul .link {
+  display: inline-block;
+}
+.header-container .desktop-links ul .link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #fbff36;
+  transform: scaleX(0);
+  padding-bottom: 15px;
+  transition: transform 250ms ease-in-out;
+}
+.header-container .desktop-links ul .link:hover:after {
+  transform: scaleX(1);
+}

@@ -1,0 +1,22 @@
+.our-solutions-container .boxGradient:hover {
+  background: linear-gradient(90deg, #00467f, #a5cc82);
+}
+
+.our-solutions-container .enterprise-gradient:hover {
+  background: linear-gradient(90deg, #9400d3, indigo);
+}
+
+.our-solutions-container .startup-gradient:hover {
+  background: linear-gradient(90deg, #1d2671, #c33764);
+}
+
+.our-solutions-container .organiztion-gadient:hover {
+  background: linear-gradient(90deg, #2d9ee0, #2f80ed 50%, #091e3a);
+}
+
+.our-solutions-container .individuals-gradient:hover {
+  background: linear-gradient(90deg, #00467f, #a5cc82);
+}
+.resorces-gradient-box {
+  background: linear-gradient(90deg, #00467F, #A5CC82);
+}
